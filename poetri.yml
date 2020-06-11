@@ -1,0 +1,30 @@
+# poetri.yml is the configuration the CLI
+# uses to deploy your code to your provider of choice
+
+# The 'service' block is the name of the service
+
+function:
+  name: SendgridEmail
+  title: SendgridEmail
+  handler: handler.sendgridEmail
+  runtime: nodejs10.x
+  method: GET
+  description: Description function Lambda
+
+#  Define function inputs variables here
+
+#inputs:
+#- title: Name my input
+  #key: nameInputT
+  #placeholder: write your answer here
+  #type: text
+  #required: true
+
+#  Define function environment variables here
+
+environments:
+  - key: MY_KEY
+    value: VALUE
+  - key: MY_KEY2
+    value: VALUE
+  
